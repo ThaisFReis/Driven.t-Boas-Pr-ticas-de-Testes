@@ -1,6 +1,4 @@
-import { prisma } from "@/config";
 import faker from "@faker-js/faker";
-import e from "express";
 import httpStatus from "http-status";
 import * as jwt from "jsonwebtoken"; 
 import supertest from "supertest";
@@ -12,12 +10,9 @@ import { cleanDb, generateValidToken } from "../helpers";
 import {
     createEnrollmentWithAddress,
     createUser,
-    createTicketType,
     createTicket,
     createPayment,
-    generateCreditCardData,
     createTicketTypeWithHotel,
-    createTicketTypeRemote,
     createHotel,
     createRoomWithHotelId,
     createBooking
